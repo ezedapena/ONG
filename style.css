@@ -1,0 +1,176 @@
+*{
+    color: white;
+    font-size: 22px;
+}
+@font-face{
+    font-family: "GeosansLight";
+    src: url("./font/GeosansLight.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main{
+    font-family: "GeosansLight";
+    text-align: center;
+}
+.info{
+    margin: 0 2% 0 2%;
+}
+nav{
+    height: 9vh;   
+    background-color: rgb(0,0,0,0.8);
+}
+nav img{
+    height: 85%;
+}
+section{
+    padding-top: 9vh;
+}
+.linksmargin{
+    top: 9vh;
+}
+iframe{
+    width: 100%;
+}
+.carimg{
+    height: 93vh;
+}
+
+.flecha1{
+    background: rgba(64,153,255,1);
+    background: -moz-linear-gradient(left, rgba(64,153,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(64,153,255,1)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(64,153,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(64,153,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(64,153,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(64,153,255,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4099ff', endColorstr='#ffffff', GradientType=1 );
+}
+.flecha2{  
+    background: rgba(255,255,255,0);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(64,153,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(64,153,255,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(64,153,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(64,153,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(64,153,255,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(64,153,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4099ff', GradientType=1 );
+}
+.flecha1:focus, .flecha2:focus{
+    opacity: 50%;
+}
+.divs, .divs1{
+    text-align: center;
+    border-radius: 20px;
+    padding: 1%;
+    background-color: rgb(0,0,0,0.8);
+    border: 2px solid black;
+    margin: 10px;
+}
+.link {
+    display: inline-block;
+    transition: 0.3s;
+}
+.link:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(17, 128, 255);
+    transition: 300ms;
+}
+.link:hover:after {
+    width: 100%;
+    transition: 0.3s;
+}
+.titulos{
+    text-shadow: 1px 1px 3px black;
+}
+p{
+    text-shadow: 1px 1px 1px black;
+}
+.linksico{
+    width: 33%;
+}
+
+@media (orientation: landscape){
+    .divs{
+        width: 25%;
+    }
+    .divs1{
+        width: 20%;
+    }
+    .iconos{
+        width: 100%;
+        border-radius: 100%;
+        filter: brightness(75%);
+        -webkit-filter: brightness(75%);
+        transition: 0.3s  
+    }
+    .iconos1{
+        width: 22%;
+        border-radius: 100%;
+        filter: brightness(75%);
+        -webkit-filter: brightness(75%);
+        transition: 0.3s
+    }
+    .iconos:hover, .iconos1:hover{
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+        transition: 0.3s;
+    }
+    .cardimg{
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+}
+@media (orientation: portrait){
+    .carimg{
+        height: 25vh;
+    }
+    .divs, .divs1{
+        width: 80%;
+    }
+    .iconos{
+        width: 37%;
+        border-radius: 100%;
+    }
+    .iconos1{
+        width: 40%;
+    }
+    .fondonav{
+        background-color: rgb(0,0,0,0.8);;
+        border-radius: 10px;
+    }
+    .cardimg{
+        width: 100%;
+        padding: 10% 10% 0 10%;
+    }
+    .navbarIcon{
+        display: inline-block;
+        width: 1.3em;
+        height: 1em;
+        vertical-align: initial;
+        content: "";
+        background: no-repeat center center;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-image: url(./img/navbar-icon.png);
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-size: 100% 100%;
+        opacity: 80%;
+    }
+    .linksico{
+        width: 60%;
+    }
+}

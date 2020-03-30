@@ -128,6 +128,10 @@ p{
         width: 100%;
         padding: 0 10% 0 10%;
     }
+    .flecha2, .flecha1{
+        height:102%;
+        padding-top: 9vh
+    }
 }
 @media (orientation: portrait){
     .carimg{
@@ -172,5 +176,9 @@ p{
     }
     .linksico{
         width: 60%;
+    }
+    .flecha2, .flecha1{
+        height:34%;
+        padding-top: 9vh
     }
 }
